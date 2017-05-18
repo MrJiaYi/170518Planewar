@@ -7,62 +7,17 @@ public class RankList : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		int score1 = 33;
-//		int score2 = 3;
-//		int score3 = 56;
-//		int score4 = 98;
-//		int score5 = 65;
-//		int score6 = 66;
-//		int score7 = 36;
-//		int score8 = 66;
-//		int score9 = 656;
-//		int score10 = 96;
+		int score1 = 33;
+		int score2 = 34;
+		int score3 = 35;
+		int score4 = 36;
+		int score5 = 37;
+		int score6 = 38;
+		int score7 = 39;
+		int score8 = 40;
+		int score9 = 31;
 
-		//int[] scores = new int[10];
-		//float[] scores = new float[10];
-		//string[] scores = new string[10];
-
-		//int[] scores = new int[10];
-		// 1, the first method to init array
-		int[] scores = {33,3,56,98,65,66,36,66,656,96};
-						
-		// 2, the 2 method to init array
-		//int[] scores = new int[10]{33,3,56,98,65,66,36,66,656,96};
-		// 3,the 3 method to init array
-//		int[] scores = new int[10];
-//		scores[0]=33;
-//		scores[1]=3;
-//		scores[2]=56;
-//		scores[3]=98;
-		///.....
-
-//		for(int i=0;i<=9;i++){
-//			print (scores[i]);
-//		}
-
-		for(int i=0;i<=9;i++  ){
-			// score[i]
-			for(int j=i+1;j<=9;j++){
-				//score[j];
-				if(scores[j]<scores[i]){
-					int temp = scores[j];
-					scores[j]=scores[i];
-					scores[i]=temp;
-				}
-			}
-
-		}
-
-		//print (scores[9]);
-		//scores[10]=100;
-		string str="Rank List\n\n";
-
-
-		for(int i=9;i>=0;i--){
-			str=str+(10-i)+"."+scores[i]+"\n";
-		}
-		guiText.text=str;
-
+		guiText.text = "Rank list\n 1." + score1 + "\n2." + score2;
 	}
 	
 	// Update is called once per frame
