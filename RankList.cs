@@ -29,6 +29,16 @@ public class RankList : MonoBehaviour {
 //		int[] scores = new int[10]{33,3,45,56,76,87,345,556,45};
 
 		int[] scores = {33,3,45,56,76,87,345,556,45};
+
+		for (int i = 0; i <= 8; i++) {
+			for (int j = i+1; j <= 8; j++) {
+				if (scores [j] > scores [i]) {
+					int temp = scores [j];
+					scores [j] = scores [i];
+					scores [i] = temp;
+				}
+			}
+		}
 		//print (scores[8]);
 		string str = "Rank List\n\n";
 
